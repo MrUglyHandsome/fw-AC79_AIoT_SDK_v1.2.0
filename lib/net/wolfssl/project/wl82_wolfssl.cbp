@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wolfssl" />
+		<Option pch_mode="2" />
+		<Option compiler="pi32" />
+		<Build>
+			<Target title="Release">
+				<Option output="../../../../cpu/wl82/liba/libwolfssl.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="pi32v2_r3_empty_compiler" />
+				<Compiler>
+					<Add option="-flto" />
+					<Add option="-Oz" />
+					<Add option="-ffunction-sections" />
+					<Add option="-Wno-unused-value" />
+					<Add option="-D_POSIX_SOURCE" />
+					<Add option="-D_SYS_SELECT_H" />
+					<Add option="-DCONFIG_CHRDEV" />
+					<Add option="-D__unix__" />
+					<Add option="-DCONFIG_FREE_RTOS_ENABLE" />
+					<Add option="-DUSE_RTOS" />
+					<Add directory="../../../../include_lib" />
+					<Add directory="../../../../include_lib/system" />
+					<Add directory="../../../../include_lib/system/generic" />
+					<Add directory="../../../../include_lib/driver/cpu/wl82" />
+					<Add directory="../../../../include_lib/net" />
+					<Add directory="../../../../include_lib/system/os/FreeRTOS/pi32_lto" />
+					<Add directory="../../../../include_lib/net/mbedtls_2_2_1" />
+					<Add directory="../../../../include_lib/net/mbedtls_2_2_1/mbedtls" />
+					<Add directory="../../../../include_lib/net/mbedtls_2_2_1/mbedtls/configs" />
+					<Add directory="../../../../include_lib/newlib/include" />
+					<Add directory="../../../../include_lib/net/wolfssl" />
+					<Add directory="../../../../include_lib/net/wolfssl/mbedtls" />
+					<Add directory="../../../../include_lib/net/wolfssl/openssl" />
+					<Add directory="../../../../include_lib/net/wolfssl/wolfcrypt" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/app" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/app/sock_api" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/src/include" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/port" />
+					<Add directory="../wolfcrypt/src" />
+					<Add directory="../../wolfssl" />
+				</Compiler>
+				<Linker>
+					<Add option="-flto" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="./" />
+		</Compiler>
+		<Unit filename="../mbedtls/aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../mbedtls/aes.h" />
+		<Unit filename="../mbedtls/algorithm_alt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/crl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/internal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/keys.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/ocsp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/sniffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/ssl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/tls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/tls13.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/wolfio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/arc4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/asm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/asn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/blake2b.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/blake2s.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/camellia.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/chacha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/chacha20_poly1305.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/cmac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/coding.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/cpuid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/cryptocb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/curve25519.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/curve448.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/des3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/dh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/dsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/ecc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/ecc_fp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/ed25519.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/ed448.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/evp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/fe_448.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/fe_low_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/fe_operations.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/ge_448.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/ge_low_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/ge_operations.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/hc128.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/hmac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/idea.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/integer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/logging.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/md2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/md4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/pkcs12.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/pkcs7.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/poly1305.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/Espressif/esp32_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/Espressif/esp32_mp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/Espressif/esp32_sha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/Espressif/esp32_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/Renesas/renesas_tsip_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/Renesas/renesas_tsip_sha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/Renesas/renesas_tsip_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/af_alg/afalg_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/af_alg/afalg_hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/af_alg/wc_afalg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/armv8-32-curve25519.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/armv8-32-sha512-asm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/armv8-aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/armv8-chacha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/armv8-curve25519.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/armv8-poly1305.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/armv8-sha256.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/armv8-sha512-asm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/armv8-sha512.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/cryptoCell.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/arm/cryptoCellHash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/atmel/atmel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/caam/caam_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/caam/caam_driver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/caam/caam_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/caam/caam_sha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/cavium/cavium_octeon_sync.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/cypress/psoc6_crypto.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/devcrypto/devcrypto_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/devcrypto/devcrypto_hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/devcrypto/wc_devcrypto.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/intel/quickassist_sync.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/mynewt/mynewt_port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/nrf51.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/nxp/ksdk_port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/pic32/pic32mz-crypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/st/stm32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/st/stsafe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/ti/ti-aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/ti/ti-ccm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/ti/ti-des3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/ti/ti-hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/xilinx/xil-aesgcm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/port/xilinx/xil-sha3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/pwdbased.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/rabbit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/random.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/ripemd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/rsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sha256.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sha3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sha512.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/signature.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sp_arm32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sp_arm64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sp_armthumb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sp_c32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sp_c64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sp_cortexm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sp_dsp32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sp_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/sp_x86_64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/srp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/tfm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/wc_dsp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/wc_encrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/wc_pkcs11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/wc_port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/wolfevent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../wolfcrypt/src/wolfmath.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="127.0.0.1" ip_port="9999" />
+				</remote_debugging>
+			</debugger>
+			<code_completion />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

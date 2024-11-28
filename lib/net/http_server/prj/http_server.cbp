@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="http_server" />
+		<Option pch_mode="2" />
+		<Option compiler="dv10" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\..\lib_http_srv" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Debug\" />
+				<Option type="2" />
+				<Option compiler="dv12" />
+				<Option autodetectfilechange="0" />
+				<Option generateeachlit="0" />
+				<Option useflatobjects="0" />
+				<Option usefullsourcepaths="0" />
+				<Compiler>
+					<Add option="-w" />
+					<Add option="-g" />
+					<Add option="-Os" />
+					<Add option="-D_POSIX_SOURCE" />
+					<Add directory="C:\JL\dv12\include" />
+					<Add directory="..\..\includes" />
+					<Add directory="..\src\include" />
+					<Add directory="..\src\api" />
+					<Add directory="..\port" />
+					<Add directory="..\..\includes\lwip\src\include" />
+					<Add directory="..\src\include\ipv4" />
+					<Add directory="..\src\netif" />
+					<Add directory="..\src\include\netif" />
+					<Add directory="..\..\includes\lwip\port\arch" />
+					<Add directory="..\..\includes\os\inc" />
+					<Add directory="..\apps\web_srv\wrlib" />
+					<Add directory="..\apps\web_srv\cgi" />
+					<Add directory="..\apps\web_srv" />
+					<Add directory="..\..\includes\lwip\port" />
+					<Add directory="..\..\includes\lwip\src\include\netif" />
+					<Add directory="..\apps\polarssl-1.3.9\include" />
+					<Add directory="..\apps\http_cli" />
+					<Add directory="..\apps\rtsp_cli" />
+					<Add directory="..\..\includes\lwip\app\ctp" />
+					<Add directory="..\..\rtos_lib\code\os_compat" />
+					<Add directory="..\..\includes\lwip\app\dhcp_srv" />
+					<Add directory="..\..\includes\lwip\app\dtp" />
+					<Add directory="..\..\includes\lwip\app\sock_api" />
+					<Add directory="..\..\includes\lwip\app\udtp" />
+					<Add directory="..\..\includes\lwip\src\include\lwip" />
+					<Add directory="..\..\includes\os\os_compat" />
+					<Add directory="..\..\includes\lwip\app\httpin" />
+					<Add directory="..\apps\stupid-ftpd" />
+					<Add directory="..\..\includes\drv" />
+					<Add directory="..\src" />
+					<Add directory="..\..\VFS\code\TFF\includes" />
+				</Compiler>
+				<Linker>
+					<Add directory="C:\JL\dv12\lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\dv10_example" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="dv10" />
+				<Option autodetectfilechange="0" />
+				<Option generateeachlit="0" />
+				<Option useflatobjects="0" />
+				<Option usefullsourcepaths="0" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-Os" />
+					<Add option="-g" />
+					<Add directory="code\Peripherals" />
+					<Add directory="code\start" />
+					<Add directory="code\common" />
+				</Compiler>
+				<Linker>
+					<Add option="-lc" />
+					<Add option="-lgcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory=".\" />
+		</Compiler>
+		<Unit filename="..\src\http_functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\src\http_headers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\src\http_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\src\http_server.h" />
+		<Unit filename="..\src\http_vfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="127.0.0.1" ip_port="9999" />
+				</remote_debugging>
+			</debugger>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

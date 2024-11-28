@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ftp_server" />
+		<Option pch_mode="2" />
+		<Option compiler="dv10" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../../cpu/wl82/liba/ftpserver_new.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="pi32v2_r3_empty_compiler" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-w" />
+					<Add option="-g" />
+					<Add option="-flto" />
+					<Add option="-Oz" />
+					<Add option="-ffunction-sections" />
+					<Add option="-Wno-unused-value" />
+					<Add option="-D_POSIX_SOURCE" />
+					<Add option="-D_SYS_SELECT_H" />
+					<Add option="-DCONFIG_FREE_RTOS_ENABLE" />
+					<Add option="-DFREE_RTOS" />
+					<Add option="-DVFS_ENABLE=1" />
+					<Add directory="../../../../include_lib/net" />
+					<Add directory="../../../../include_lib/net/server" />
+					<Add directory="../../../../include_lib/net/wifi_module" />
+					<Add directory="../../../../include_lib/net/hostapdandwpa_supplicant" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/src/include" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/src/include/lwip" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/port" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/app" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/app/ctp" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/app/cdp" />
+					<Add directory="../../../../include_lib/utils" />
+					<Add directory="../../../../include_lib/driver" />
+					<Add directory="../../../../include_lib/system/generic" />
+					<Add directory="../../../../include_lib/system/" />
+					<Add directory="../../../../include_lib/driver/cpu/wl82/" />
+					<Add directory="../../../../include_lib/driver/cpu" />
+					<Add directory="../../../../include_lib" />
+					<Add directory="../../../../include_lib/system/os" />
+					<Add directory="../../../../include_lib/system/os/FreeRTOS" />
+					<Add directory="../../../../include_lib/system/os/FreeRTOS/pi32v2" />
+					<Add directory="../src" />
+				</Compiler>
+				<Linker>
+					<Add option="-flto" />
+					<Add directory="C:/JL/dv12/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/dv10_example" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="dv10" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-Os" />
+					<Add option="-g" />
+					<Add directory="code/Peripherals" />
+					<Add directory="code/start" />
+					<Add directory="code/common" />
+				</Compiler>
+				<Linker>
+					<Add option="-lc" />
+					<Add option="-lgcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="./" />
+		</Compiler>
+		<Unit filename="../src/ftpd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/ftpd.h" />
+		<Unit filename="../src/http_server.h" />
+		<Unit filename="../src/vfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/vfs.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="127.0.0.1" ip_port="9999" />
+				</remote_debugging>
+			</debugger>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

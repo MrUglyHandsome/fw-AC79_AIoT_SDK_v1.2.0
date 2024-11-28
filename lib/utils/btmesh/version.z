@@ -1,0 +1,13 @@
+.section .sys.version, "ax"
+
+.global lib_btmesh_version
+
+lib_btmesh_version:
+
+#ifdef CONFIG_RELEASE_ENABLE
+
+#else
+
+.asciz "BTMESH-*modified*-{env:USER}-@{DATE}-${COMMID}"
+#endif
+

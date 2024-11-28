@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libduer-device" />
+		<Option pch_mode="2" />
+		<Option compiler="pi32" />
+		<Build>
+			<Target title="Release">
+				<Option output="../../../../cpu/wl82/liba/libduer-device.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="pi32v2_r3_empty_compiler" />
+				<Compiler>
+					<Add option="-flto" />
+					<Add option="-Os" />
+					<Add option="-ffunction-sections" />
+					<Add option="-Wno-unused-value" />
+					<Add option="-D_POSIX_SOURCE" />
+					<Add option="-D_SYS_SELECT_H" />
+					<Add option="-DCONFIG_FREE_RTOS_ENABLE" />
+					<Add directory="../../../../include_lib" />
+					<Add directory="../../../../include_lib/newlib/include" />
+					<Add directory="../../../../include_lib/utils" />
+					<Add directory="../../../../include_lib/system" />
+					<Add directory="../../../../include_lib/system/generic" />
+					<Add directory="../../../../include_lib/system/os" />
+					<Add directory="../../../../include_lib/server" />
+					<Add directory="../../../../include_lib/driver" />
+					<Add directory="../../../../include_lib/driver/cpu/wl82" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/src/include" />
+					<Add directory="../../../../include_lib/net" />
+					<Add directory="../framework/core" />
+					<Add directory="../framework/include" />
+					<Add directory="../framework/utils" />
+					<Add directory="../external/baidu_json" />
+					<Add directory="../external/mbed-client-c" />
+					<Add directory="../external/mbed-client-c/source/libCoap/src/include" />
+					<Add directory="../external/mbed-client-c/source/libNsdl/src/include" />
+					<Add directory="../modules/coap" />
+					<Add directory="../modules/connagent" />
+					<Add directory="../modules/dcs" />
+					<Add directory="../modules/Device_Info" />
+					<Add directory="../modules/HTTP" />
+					<Add directory="../modules/voice_engine" />
+					<Add directory="../modules/bind_device" />
+					<Add directory="../modules/System_Info" />
+					<Add directory="../modules/device_status" />
+					<Add directory="../modules/ntp" />
+					<Add directory="../examples/dcs3.0-demo" />
+					<Add directory="../platform/source-jl" />
+					<Add directory="../platform/include" />
+					<Add directory="../modules/OTA/Decompression" />
+					<Add directory="../modules/OTA/Downloader" />
+					<Add directory="../modules/OTA/Installer" />
+					<Add directory="../modules/OTA/Notifier" />
+					<Add directory="../modules/OTA/Unpacker" />
+					<Add directory="../modules/OTA/Updater" />
+					<Add directory="../modules/OTA/Verifier" />
+					<Add directory="../../../../include_lib/net/mbedtls_3_4_0" />
+					<Add directory="../../../../include_lib/net/mbedtls_3_4_0/mbedtls" />
+					<Add directory="../external/mbed-client-c/nsdl-c" />
+					<Add directory="../external/mbed-client-c-port" />
+					<Add directory="../external/mbed-trace" />
+					<Add directory="../../../../include_lib/system/os/FreeRTOS/pi32v2" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/app/sock_api" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/port" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/app" />
+					<Add directory="../../../../include_lib/net/zliblite" />
+				</Compiler>
+				<Linker>
+					<Add option="-flto" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="./" />
+		</Compiler>
+		<Unit filename="../../../../include_lib/server/format.sh" />
+		<Unit filename="../../../../include_lib/server/media.ld" />
+		<Unit filename="../../../../include_lib/server/version.z.S" />
+		<Unit filename="../../../../include_lib/system/generic/ascii.h" />
+		<Unit filename="../../../../include_lib/system/generic/atomic.h" />
+		<Unit filename="../../../../include_lib/system/generic/circular_buf.h" />
+		<Unit filename="../../../../include_lib/system/generic/cpu.h" />
+		<Unit filename="../../../../include_lib/system/generic/debug_lite.h" />
+		<Unit filename="../../../../include_lib/system/generic/errno-base.h" />
+		<Unit filename="../../../../include_lib/system/generic/includes.h" />
+		<Unit filename="../../../../include_lib/system/generic/io.h" />
+		<Unit filename="../../../../include_lib/system/generic/ioctl.h" />
+		<Unit filename="../../../../include_lib/system/generic/irq.h" />
+		<Unit filename="../../../../include_lib/system/generic/jiffies.h" />
+		<Unit filename="../../../../include_lib/system/generic/lbuf.h" />
+		<Unit filename="../../../../include_lib/system/generic/lbuf_lite.h" />
+		<Unit filename="../../../../include_lib/system/generic/list.h" />
+		<Unit filename="../../../../include_lib/system/generic/log.h" />
+		<Unit filename="../../../../include_lib/system/generic/printf.h" />
+		<Unit filename="../../../../include_lib/system/generic/rect.h" />
+		<Unit filename="../../../../include_lib/system/generic/typedef.h" />
+		<Unit filename="../../../../include_lib/system/generic/version.h" />
+		<Unit filename="../examples/dcs3.0-demo/duer_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../examples/dcs3.0-demo/duerapp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../examples/dcs3.0-demo/duerapp.h" />
+		<Unit filename="../examples/dcs3.0-demo/duerapp_alarm.h" />
+		<Unit filename="../examples/dcs3.0-demo/duerapp_alert.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../examples/dcs3.0-demo/duerapp_alert.h" />
+		<Unit filename="../examples/dcs3.0-demo/duerapp_config.h" />
+		<Unit filename="../examples/dcs3.0-demo/duerapp_event.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../examples/dcs3.0-demo/duerapp_event.h" />
+		<Unit filename="../examples/dcs3.0-demo/duerapp_media.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../examples/dcs3.0-demo/duerapp_media.h" />
+		<Unit filename="../examples/dcs3.0-demo/duerapp_ota.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../examples/dcs3.0-demo/duerapp_profile_config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../examples/dcs3.0-demo/duerapp_recorder.h" />
+		<Unit filename="../external/baidu_json/baidu_json.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/baidu_json/baidu_json.h" />
+		<Unit filename="../external/mbed-client-c-port/ns_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/mbed-client-c-port/ns_list.h" />
+		<Unit filename="../external/mbed-client-c-port/ns_types.h" />
+		<Unit filename="../external/mbed-client-c/source/libCoap/src/include/sn_coap_header_internal.h" />
+		<Unit filename="../external/mbed-client-c/source/libCoap/src/include/sn_coap_protocol_internal.h" />
+		<Unit filename="../external/mbed-client-c/source/libCoap/src/sn_coap_builder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/mbed-client-c/source/libCoap/src/sn_coap_header_check.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/mbed-client-c/source/libCoap/src/sn_coap_parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/mbed-client-c/source/libCoap/src/sn_coap_protocol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/mbed-trace/source/mbed_trace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_ap_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_ap_info.h" />
+		<Unit filename="../framework/core/lightduer_debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_debug.h" />
+		<Unit filename="../framework/core/lightduer_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_file.h" />
+		<Unit filename="../framework/core/lightduer_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_lib.h" />
+		<Unit filename="../framework/core/lightduer_log.h" />
+		<Unit filename="../framework/core/lightduer_memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_memory.h" />
+		<Unit filename="../framework/core/lightduer_memory_hm_keywords.h" />
+		<Unit filename="../framework/core/lightduer_mutex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_mutex.h" />
+		<Unit filename="../framework/core/lightduer_net_trans_aes_cbc_encrypted.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_net_trans_aes_cbc_encrypted.h" />
+		<Unit filename="../framework/core/lightduer_net_trans_encrypted.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_net_trans_encrypted.h" />
+		<Unit filename="../framework/core/lightduer_net_transport.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_net_transport.h" />
+		<Unit filename="../framework/core/lightduer_net_transport_wrapper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_net_transport_wrapper.h" />
+		<Unit filename="../framework/core/lightduer_random.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_random.h" />
+		<Unit filename="../framework/core/lightduer_semaphore.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_semaphore.h" />
+		<Unit filename="../framework/core/lightduer_sleep.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_sleep.h" />
+		<Unit filename="../framework/core/lightduer_thread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_thread.h" />
+		<Unit filename="../framework/core/lightduer_timestamp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/core/lightduer_timestamp.h" />
+		<Unit filename="../framework/utils/lightduer_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_aes.h" />
+		<Unit filename="../framework/utils/lightduer_base_coding.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_base_coding.h" />
+		<Unit filename="../framework/utils/lightduer_bitmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_bitmap.h" />
+		<Unit filename="../framework/utils/lightduer_ecdh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_ecdh.h" />
+		<Unit filename="../framework/utils/lightduer_handler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_handler.h" />
+		<Unit filename="../framework/utils/lightduer_hashcode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_hashcode.h" />
+		<Unit filename="../framework/utils/lightduer_math.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_math.h" />
+		<Unit filename="../framework/utils/lightduer_net_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_net_util.h" />
+		<Unit filename="../framework/utils/lightduer_queue_cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_queue_cache.h" />
+		<Unit filename="../framework/utils/lightduer_rscode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_rscode.h" />
+		<Unit filename="../framework/utils/lightduer_snprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_snprintf.h" />
+		<Unit filename="../framework/utils/lightduer_uuid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../framework/utils/lightduer_uuid.h" />
+		<Unit filename="../modules/Device_Info/lightduer_dev_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/Device_Info/lightduer_dev_info.h" />
+		<Unit filename="../modules/HTTP/lightduer_http_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/HTTP/lightduer_http_client.h" />
+		<Unit filename="../modules/HTTP/lightduer_http_client_ops.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/HTTP/lightduer_http_client_ops.h" />
+		<Unit filename="../modules/HTTP/lightduer_http_dns_client_ops.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/HTTP/lightduer_http_dns_client_ops.h" />
+		<Unit filename="../modules/OTA/Decompression/lightduer_ota_decompression.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Decompression/lightduer_ota_decompression.h" />
+		<Unit filename="../modules/OTA/Decompression/lightduer_ota_zlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Decompression/lightduer_ota_zlib.h" />
+		<Unit filename="../modules/OTA/Downloader/lightduer_ota_downloader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Downloader/lightduer_ota_downloader.h" />
+		<Unit filename="../modules/OTA/Downloader/lightduer_ota_http_downloader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Downloader/lightduer_ota_http_downloader.h" />
+		<Unit filename="../modules/OTA/Downloader/lightduer_ota_local_downloader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Downloader/lightduer_ota_local_downloader.h" />
+		<Unit filename="../modules/OTA/Installer/lightduer_ota_installer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Installer/lightduer_ota_installer.h" />
+		<Unit filename="../modules/OTA/Notifier/lightduer_ota_notifier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Notifier/lightduer_ota_notifier.h" />
+		<Unit filename="../modules/OTA/Unpacker/lightduer_ota_package_info.h" />
+		<Unit filename="../modules/OTA/Unpacker/lightduer_ota_unpacker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Unpacker/lightduer_ota_unpacker.h" />
+		<Unit filename="../modules/OTA/Updater/lightduer_ota_updater.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Updater/lightduer_ota_updater.h" />
+		<Unit filename="../modules/OTA/Verifier/lightduer_ota_verifier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/OTA/Verifier/lightduer_ota_verifier.h" />
+		<Unit filename="../modules/System_Info/lightduer_system_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/System_Info/lightduer_system_info.h" />
+		<Unit filename="../modules/bind_device/lightduer_bind_device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/bind_device/lightduer_bind_device.h" />
+		<Unit filename="../modules/bind_device/lightduer_security_bind_device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/bind_device/lightduer_security_bind_device.h" />
+		<Unit filename="../modules/coap/lightduer_coap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/coap/lightduer_coap.h" />
+		<Unit filename="../modules/coap/lightduer_coap_ep.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/coap/lightduer_coap_ep.h" />
+		<Unit filename="../modules/coap/lightduer_coap_trace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/coap/lightduer_coap_trace.h" />
+		<Unit filename="../modules/coap/lightduer_nsdl_adapter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/coap/lightduer_nsdl_adapter.h" />
+		<Unit filename="../modules/connagent/lightduer_ca.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/connagent/lightduer_ca.h" />
+		<Unit filename="../modules/connagent/lightduer_ca_conf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/connagent/lightduer_ca_conf.h" />
+		<Unit filename="../modules/connagent/lightduer_connagent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/connagent/lightduer_connagent.h" />
+		<Unit filename="../modules/connagent/lightduer_data_cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/connagent/lightduer_data_cache.h" />
+		<Unit filename="../modules/connagent/lightduer_engine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/connagent/lightduer_engine.h" />
+		<Unit filename="../modules/connagent/lightduer_event_emitter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/connagent/lightduer_event_emitter.h" />
+		<Unit filename="../modules/dcs/lightduer_dcs.h" />
+		<Unit filename="../modules/dcs/lightduer_dcs_alert.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_alert.h" />
+		<Unit filename="../modules/dcs/lightduer_dcs_audio_player.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_device_contorl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_device_control.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_dummy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_infrared_control.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_infrared_control.h" />
+		<Unit filename="../modules/dcs/lightduer_dcs_led_controller.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_local.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_local.h" />
+		<Unit filename="../modules/dcs/lightduer_dcs_local_player.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_miscellaneous.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_notifications.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_playback_control.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_router.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_router.h" />
+		<Unit filename="../modules/dcs/lightduer_dcs_screen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_screen_ext_card.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_speaker_control.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_system.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_text_input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_voice_input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/dcs/lightduer_dcs_voice_output.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_airkiss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_airkiss.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_audio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_audio.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_audio_player.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_audio_player.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_bind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_bind.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_ble_net_cfg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_ble_net_cfg.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_ca.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_ca.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_cache.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_dcs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_dcs.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_e2e.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_e2e.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_http.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_http.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_pm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_pm.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_recorder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_recorder.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_smart_config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_smart_config.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_sonic_decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_sonic_decode.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_storage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_storage.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_log_wifi_config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_log_wifi_config.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_report.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_report.h" />
+		<Unit filename="../modules/device_status/lightduer_ds_report_ca.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/device_status/lightduer_ds_report_ca.h" />
+		<Unit filename="../modules/interactive_class/lightduer_interactive_class.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/interactive_class/lightduer_interactive_class.h" />
+		<Unit filename="../modules/ntp/lightduer_net_ntp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/ntp/lightduer_net_ntp.h" />
+		<Unit filename="../modules/smartconfig/lightduer_smart_config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/smartconfig/lightduer_smart_config.h" />
+		<Unit filename="../modules/smartconfig/lightduer_smart_config_decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/smartconfig/lightduer_smart_config_decode.h" />
+		<Unit filename="../modules/smartconfig/lightduer_wifi_config_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/smartconfig/lightduer_wifi_config_utils.h" />
+		<Unit filename="../modules/voice_engine/lightduer_session.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/voice_engine/lightduer_session.h" />
+		<Unit filename="../modules/voice_engine/lightduer_speex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/voice_engine/lightduer_speex.h" />
+		<Unit filename="../modules/voice_engine/lightduer_store_voice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/voice_engine/lightduer_store_voice.h" />
+		<Unit filename="../modules/voice_engine/lightduer_voice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../modules/voice_engine/lightduer_voice.h" />
+		<Unit filename="../platform/source-jl/baidu_ca_adapter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/baidu_ca_adapter_internal.h" />
+		<Unit filename="../platform/source-jl/baidu_ca_ap_info_adp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/baidu_ca_debug_adp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/baidu_ca_memory_adp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/baidu_ca_mutex_adp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/baidu_ca_socket_adp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/lightduer_adapter_config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/lightduer_adapter_config.h" />
+		<Unit filename="../platform/source-jl/lightduer_adapter_fs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/lightduer_events.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/lightduer_priority_conf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/lightduer_priority_conf.h" />
+		<Unit filename="../platform/source-jl/lightduer_semaphore_adp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/lightduer_statistics.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/lightduer_thread_adp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/lightduer_timers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../platform/source-jl/net_timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="127.0.0.1" ip_port="9999" />
+				</remote_debugging>
+			</debugger>
+			<code_completion />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
